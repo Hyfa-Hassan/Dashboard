@@ -1,0 +1,80 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
+  }
+  
+  .hamburger-menu {
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+  }
+  
+  .navigation {
+    display: none;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #333131;
+  }
+
+  .navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navigation li {
+    margin: 0;
+  }
+  
+  .navigation a {
+    display: block;
+    padding: 1rem;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navigation a:hover {
+    background-color: #666;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .lead-space {
+    height: 5rem;
+    background-color: #f0f0f0;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 2rem;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
