@@ -1,34 +1,36 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import "./Dashboard.css";
-import image from "../images/logo.jpg";
+import image from "../images/logo1.png";
+
 const Dashboard = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => {
-        console.log("toggle menu here")
+        // console.log("toggle menu here")
         setMenuOpen(!menuOpen);
       };
 
 
   return (
     <div className="dashboard">
-      <header>
+      {/* <header>
         <div className="logo">
           <img src={image} alt="logo" />
         </div>
         <button className="hamburger-menu" onClick={toggleMenu}>&#9776;</button>
         <nav className={`navigation ${menuOpen ? 'show' : ''}`}>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Admin Pages</a></li>
+            <li><a href="/">Home</a></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/contact">Contact Us</Link></li>
+            <li><Link to="/admin">Admin</Link></li>
           </ul>
         </nav>
-      </header>
-      <main>
+      </header> */}
+      {/* <main> */}
         {/* <div className="lead-space">Lead Space</div> */}
-        <div className="content">
+        {/* <div className="content">
           Dummy data is mock data generated at random as a substitute for live
           data in testing environments. In other words, dummy data acts as a
           placeholder for live data, the latter of which testers only introduce
@@ -41,7 +43,7 @@ const Dashboard = () => {
           fix the problem with no negative impact on your valuable data assets.
         </div>
       </main>
-      <footer>Footer</footer>
+      <footer>Footer</footer> */}
     </div>
   );
 };
